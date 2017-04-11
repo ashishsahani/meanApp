@@ -16,12 +16,18 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap theme -->
     <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <!-- Angular Libraries -->
     <script src="assets/js/angular.min.js"></script>
     <script src="assets/js/angular-route.min.js"></script>
+    <!-- Angular Main/Route -->
     <script src="app/app.js"></script>
     <script src="app/route.js"></script>
-   
+    <!-- Angular Controllers -->
+    <script src="app/controllers/userCtrl.js"></script>
+    <!-- Angular Services -->
+    <script src="app/services/userServices.js"></script> 
   </head>
 
   <body ng-app="meanApp">
@@ -40,14 +46,17 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#/">Home</a></li>
+            <li><a href="#/">Home</a></li>
             <li><a href="#/about">About</a></li>
-            <li><a href="#/register">Register</a></li>
+            <li ng-class=""><a href="#/register">Register</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-    <div class="main-routing-body" ng-view></div>
+    <div class="container" style="margin-top:10px;">
+      <div class="starter-template" ng-view></div>
+    </div>
+    
 
    
     <!-- Bootstrap core JavaScript

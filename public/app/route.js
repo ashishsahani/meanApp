@@ -9,7 +9,9 @@ angular.module('appRoutes',['ngRoute'])
 	   		templateUrl:'app/views/templates/about.html'
 	   	})
 	   	.when('/register',{
-	   		templateUrl:'app/views/templates/register.html'
+	   		templateUrl:'app/views/templates/register.html',
+	   		controller:'regCtrl',
+	   		controllerAs:'register'
 	   	})
 	   	.otherwise({redirectTo :"/"})
 })

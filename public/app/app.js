@@ -1,1 +1,1 @@
-angular.module('meanApp',['appRoutes']);
+angular.module('meanApp',['appRoutes','userControllers']);
